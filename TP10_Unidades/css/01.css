@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1, h2{
+    color:red;
+}
+h3{
+    color: orange;
+}
+.txt1{
+    font-size: 24px;
+}
+.caja{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+}
+.caja1{
+    width: 750px;
+    height: 250px;
+    background-color: green;
+}
+.caja2{
+    width: 600px;
+    height: 300px;
+    background-color: orange;
+}
+.caja3{
+    width: 300px;
+    height: 150px;
+    background-color: red;
+}
+.txt2{
+    font-size: 1.5em;
+    color:blue;
+}
+.txt2 span{
+    font-size: 1.5em;
+}
+.txt3{
+    font-size: 1.5rem;
+    color:green;
+}
+.txt3 span{
+    font-size: 1.5rem;
+}
+/* html{
+    font-size: 8px;
+} */
+.txt4{
+    font-size: 150%;
+    color:orange;
+}
+.txt4 span{
+    font-size: 150%;
+}
+.txt5{
+    font-size: 2vw;
+    color:red;
+}
+.txt5 span{
+    font-size: 1vw;
+}
+.caja4{
+    background-color: purple;
+    width: 18em;
+    height: 100px;
+}
+.caja5{
+    background-color: aquamarine;
+    width: 30%;
+    height: 100px;
+}
+.caja6{
+    background-color: yellow;
+    width: 30vw;
+    height: 100px;
+}
+.caja7{
+    background-color: magenta;
+    height: 100px;
+    width: 50%;
+    max-width: 500px;
+}
+.caja8{
+    background-color: cyan;
+    height: 100px;
+    width: 50%;
+    min-width: 500px;
+}
