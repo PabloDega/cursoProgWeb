@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerarquias CSS</title>
+    <link rel="stylesheet" href="04.css">
+</head>
+<style>
+    .origen{
+        color:red;
+    }
+    .cascada{
+        color:red;
+    }
+    .cascada{
+        color:violet;
+    }
+    p{
+        color:grey;
+    }
+    .claseEsp{
+        color:blue/*!important*/;
+    }
+    p#idEsp{
+        color:green;
+    }
+    #idEsp{
+        color:red;
+    }
+</style>
+<body>
+    <h1>Precedencia en CSS</h1>
+    <h2>Origen</h2>
+    <h4 class="origen" style="color:pink;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+    <hr>
+    <h2>Cascada</h2>
+    <p class="cascada">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <hr>
+    <h2>Especificidad</h2>
+    <p class="claseEsp" id="idEsp">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</body>
+</html>

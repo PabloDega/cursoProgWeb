@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: darkred;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.contenedor{
+    width: 60%;
+    background-color: white;
+    margin: auto;
+}
+header h1, section{
+    margin: 0;
+    padding: 15px;
+}
+nav ul{
+    margin: 0;
+    padding: 15px;
+    background-color: lightgrey;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li::after{
+    content: " / ";
+}
+nav ul li:last-child::after{
+    content: "";
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    padding: 5px;
+}
+nav ul li a:hover{
+    color: darkred;
+}
+footer{
+    display: block;
+    width: 100%;
+    background-color: darkgrey;
+    padding: 15px;
+    box-sizing: border-box;
+}
+form{
+    padding: 25px;
+}
+form span{
+    display: block;
+    padding: 15px 0;
+    font-weight: 600;
+}
+form label{
+    display: inline-block;
+    margin: 10px 0 5px 0;
+}
+form input, form textarea{
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 7px;
+    transition: 0.5s;
+}
+form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="date"], form input[type="file"]{
+    display: block;
+}
+form input[type="text"]:focus, form input:focus[type="email"]:focus, form input:focus[type="tel"]:focus, form textarea:focus{
+    box-shadow: 5px 5px 5px gray inset;
+    background-color: lightgray;
+    outline: 0;
+}
+form label[for="nacionalidad"]{
+    display: block;
+}
+form select{
+    display: block;
+}
+form button{
+    margin: 10px 15px 0 0;
+    padding: 10px;
+    background-color: red;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+form button:hover{
+    background-color: darkred;
+}

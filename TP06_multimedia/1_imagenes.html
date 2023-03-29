@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="im/favicon.ico">
+    <title>Manejo de Imágenes</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+        }
+        .contenedor1{
+            background-color: black;
+            width: 100%;
+            color:white;
+        }
+        h1, h2, p{
+            text-align: center;
+        }
+        .img{
+            display: block;
+            margin: auto;
+        }
+        #imLoading{
+            width: 100px;
+        }
+        #imExtraterrestre{
+            width: 300px;
+        }
+        #color{
+            background-color: orange;
+            padding: 25px;
+        }
+        #edicion1, #edicion2, #edicion3, #edicion4, #edicion5, #edicion6, #comp1, #comp2, #comp3{
+            display: inline-block;
+            width: 250px;
+        }
+        #edicion1{
+            filter: grayscale(95%);
+        }
+        #edicion2{
+            filter: blur(3px);
+        }
+        #edicion3{
+            filter: invert(100%);
+        }
+        #edicion4{
+            filter:sepia(100%);
+        }
+        #edicion5{
+            filter: opacity(40%);
+        }
+        #borde1{
+            border-radius: 25%;
+            border: solid 5px blue;
+            padding: 6px;
+        }
+        #boton{
+            width: 250px;
+        }
+        #fondo1{
+            display: block;
+            padding: 150px;
+            width:300px;
+            margin: auto;
+            background-image: url(im/foto01.jpg);
+            background-size: 250px 150px;
+            background-repeat: repeat;
+        }
+        #fondo2{
+            display: block;
+            padding: 150px;
+            width:300px;
+            margin: auto;
+            background-image: url(im/foto01.jpg);
+            background-size:cover;
+        }
+
+
+        #comp1{
+            opacity:1;
+            transition: 1s;
+        }
+        #comp1:hover{
+            opacity:0.1;
+        }
+        #comp2{
+            transition: 1s;
+        }
+        #comp2:hover{
+            transform: translateY(-50px);
+        }
+        #comp3{
+            transition: 1s;
+        }
+        #comp3:hover{
+            transform: rotatez(90deg);
+        }
+        picture img{
+            width: 60%;
+            margin-left: 20%;
+        }
+        figure{
+            text-align: center;
+        }
+        svg{
+            width: 70px;
+            fill: grey;
+            margin: 15px;
+        }
+        svg:hover{
+            fill:black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor1">
+    <h1>Manejo de imágenes</h1><br>
+        <img class="img" id="imLoading" src="im/loading01.gif" alt="cargando">
+        <p>Silencio, buscando error en el código....</p>
+        <img class="img" id="imExtraterrestre" src="im/gif01.gif" alt="alien">
+    </div>
+
+    <h2>Imagen SVG</h2>
+        <div id="color">
+            <img class="img" src="im/blackcat.svg" width="100px" alt="gato negro">
+        </div>
+    <hr>    
+
+    <h2>Edición de imágenes</h2>
+        <img class="img" id="edicion1" src="im/foto01.jpg" alt="foto de muestra">
+        <img class="img" id="edicion2" src="im/foto01.jpg" alt="foto de muestra">
+        <img class="img" id="edicion3" src="im/foto01.jpg" alt="foto de muestra">
+        <img class="img" id="edicion4" src="im/foto01.jpg" alt="foto de muestra">
+        <img class="img" id="edicion5" src="im/foto01.jpg" alt="foto de muestra">
+    <hr>
+    <h2>Borde de imágenes</h2>
+        <img class="img" id="borde1" src="im/foto01.jpg" alt="foto de muestra">
+    <hr>
+    <h2>Imagen como botón</h2>
+        <a href="#"><img class="img" id="boton" src="im/foto01.jpg" alt="foto de muestra"></a>
+    <hr>
+    <h2>Imagen de fondo</h2>
+        <div id="fondo1"></div><br>
+        <div id="fondo2"></div>
+    <hr>
+
+    <h2>Comportamiento de imágenes</h2>
+        <img class="img" id="comp1" src="im/foto01.jpg" alt="foto de muestra">
+        <img class="img" id="comp2" src="im/foto01.jpg" alt="foto de muestra">
+        <img class="img" id="comp3" src="im/foto01.jpg" alt="foto de muestra">
+    <hr>
+
+    <h2>Etiqueta Picture</h2>
+    <picture>
+        <source media="(min-width: 800px)" srcset="im/perro.png" alt="imagen de un perro">
+        <source media="(min-width: 600px)" srcset="im/gato.png" alt="imagen de un gato">
+        <img src="im/hamster.png" alt="imágen de un hamster">
+    </picture>
+    <hr>
+
+    <h2>Etiqueta Figure</h2>
+    <figure>
+        <img src="im/foto01.jpg" alt="foto de muestra">
+        <figcaption>Mujer con camara de fotos</figcaption>
+    </figure>
+    <hr>
+    <h2>Iconos SVG</h2>
+    <p>Font Awesome <br>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8.1-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 112c-8.8 0-16 7.2-16 16V384c0 8.8 7.2 16 16 16H512c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H64zM0 128C0 92.7 28.7 64 64 64H512c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM176 320H400c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm-72-72c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H120c-8.8 0-16-7.2-16-16V248zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H120c-8.8 0-16-7.2-16-16V168c0-8.8 7.2-16 16-16zm64 96c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H200c-8.8 0-16-7.2-16-16V248zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H200c-8.8 0-16-7.2-16-16V168c0-8.8 7.2-16 16-16zm64 96c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H280c-8.8 0-16-7.2-16-16V248zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H280c-8.8 0-16-7.2-16-16V168c0-8.8 7.2-16 16-16zm64 96c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H360c-8.8 0-16-7.2-16-16V248zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H360c-8.8 0-16-7.2-16-16V168c0-8.8 7.2-16 16-16zm64 96c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H440c-8.8 0-16-7.2-16-16V248zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H440c-8.8 0-16-7.2-16-16V168c0-8.8 7.2-16 16-16z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+</p>
+</body>
+</html>

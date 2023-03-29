@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+body{
+    margin: 0;
+}
+.caja{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+.texto1{
+    background-color: lightblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    text-align-last: right;
+}
+.texto1 span{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.texto2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightcoral;
+    letter-spacing: 2px;
+    line-height: 150%;
+}
+.texto2 h2{
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+}
+.texto3{
+    background-color: lightseagreen;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.texto3:hover{
+    white-space: normal;
+}
+.texto4{
+    background-color: lightblue;
+}
+.texto4 span{
+    width: 150px;
+    display: block;
+    border: solid 1px gray;
+    word-wrap: break-word;
+}
+.texto4 span:hover{
+    word-wrap:normal;
+}
+.texto5{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 150%;
+    background-color: lightcoral;
+}
+.texto6{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightseagreen;
+    letter-spacing: 2px;
+    line-height: 120%;
+    column-count: 4;
+    column-gap: 40px;
+    column-rule: solid 2px gray;
+}
+.texto6 h2{
+    column-span: all;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV y estilos</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 100%;
+            background-color: lightgray;
+            margin: 0;
+        }
+        #contenedor{
+            width: 70%;
+            margin: auto;
+            background-color: white;
+        }
+        .titulo{
+            background-color: grey;
+            color:white;
+            padding: 3%;
+            font-size: 175%;
+        }
+        .subtitulo{
+            padding: 3%;
+            font-size: 150%;
+        }
+        #bLayout{
+            background-color: grey;
+            width: 100%;
+            /*margin: 10%;
+            padding: 10%;*/
+            border:solid 5px red;
+        }
+        #bSDiv1{
+            background-color: cyan;
+            width: 500px;
+            margin: 20px auto;
+        }
+        #bSDiv2{
+            border: solid 3px blue;
+            width: 500px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 10px auto;
+        }
+        .columna{
+            display: inline-block;
+            height: 200px;
+        }
+        #col1{
+            background-color: orange;
+            width: 30%;
+        }
+        #col2{
+            background-color: red;
+            width: 70%;
+        }
+        .imGalPorcentual{
+            background-color: orange;
+            /*display: inline-block;*/
+            width: 20%;
+            margin: 2.5%;
+            /*alineación vertical-->*/ padding: 50px 0 50px 0;
+            border: solid 2px red;
+            box-sizing: border-box;
+            text-align: center;
+            float: left;
+        }
+        .imGalFija{
+            background-color: orange;
+            display: inline-block;
+            width: 200px;
+            margin: 2.5%;
+            /*alineación vertical-->*/ padding: 50px 0 50px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div class="titulo">Div y estilos aplicando class y id</div>
+
+        <div class="subtitulo">Box layout<hr></div>
+        <div id="bLayout">Box con borde, margen y padding</div>
+
+        <div class="subtitulo">Box sizing<hr></div>
+        <div id="bSDiv1">Contenido del DIV 1</div>
+        <div id="bSDiv2">Contenido del DIV 2</div>
+
+        <div class="subtitulo">Disposición en columnas<hr></div>
+        <div class="columna" id="col1">Columna 1</div><div class="columna" id="col2">Columna 2</div>
+
+        <div class="subtitulo">Galería con porcentual<hr></div>
+        <div class="imGalPorcentual">1</div>
+        <div class="imGalPorcentual">2</div>
+        <div class="imGalPorcentual">3</div>
+        <div class="imGalPorcentual">4</div>
+        <div class="imGalPorcentual">5</div>
+        <div class="imGalPorcentual">6</div>
+        <div class="imGalPorcentual">7</div>
+        <div class="imGalPorcentual">8</div>
+
+        <div class="subtitulo">Galería de ancho fijo<hr></div>
+        <div class="imGalFija">1</div>
+        <div class="imGalFija">2</div>
+        <div class="imGalFija">3</div>
+        <div class="imGalFija">4</div>
+        <div class="imGalFija">5</div>
+        <div class="imGalFija">6</div>
+        <div class="imGalFija">7</div>
+        <div class="imGalFija">8</div>
+
+    </div>
+</body>
+</html>

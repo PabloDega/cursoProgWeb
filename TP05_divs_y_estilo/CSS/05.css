@@ -1,0 +1,132 @@
+body{
+    width: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightgray;
+    margin: auto;
+}
+/* Selector Agrupado */
+#div01, #p01, #a01{
+    color:green;
+}
+/* Selector Descendiente */
+#div02{
+    color:gray;
+}
+#div02 p{
+    color:orange;
+}
+#div02 p b{
+    color:red;
+}
+#div02 a{
+    color:violet;
+}
+a.clase02{
+    color:green;
+}
+p.clase02{
+    color:blue;
+}
+#div03 > p{
+    color:red;
+}
+#div03 > div{
+    color:green;
+}
+#div03 > div > p{
+    color:purple;
+}
+.div04 :where(a, p, span){
+    color:darkcyan;
+}
+.div04#id04{
+    color: darkorange;
+}
+/* Clases agrupadas */
+.color{
+    color:blue;
+}
+.italica{
+    font-style: italic;
+}
+.grande{
+    font-size: x-large;
+}
+/* Selector de atributos */
+.links a{
+    display: block;
+    margin-top: 15px;
+}
+.links a[target]{
+    color:green;
+}
+.links a[target=_self]{
+    color:orange;
+}
+.links a[href*="cfl"]{
+    color:red;
+}
+/* Pseudoclases */
+#div05{
+    color: white;
+    background-color: darkblue;
+    padding: 30px;
+}
+#div05:hover{
+    background-color: darkmagenta;
+}
+#div05:active{
+    background-color: darkgreen;
+}
+.links02 a{
+    display: block;
+    margin-top: 15px;
+}
+.links02 a:link{
+    color:red;
+}
+.links02 a:visited{
+    color:orange;
+}
+#div06 ul li:first-child{
+    color:red;
+}
+#div06 ul li:last-child{
+    color:blue;
+}
+#div07 div{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid 2px black;
+}
+#div07 div:nth-child(even){
+    background-color: red;
+}
+#div07 div:nth-child(odd){
+    background-color: orange;
+}
+#div07 div:nth-child(4){
+    background-color: green;
+}
+/*Pseudoelementos*/
+.codigo span{
+    font-size: 150%;
+}
+.codigo span::before{
+    content: "<";
+}
+.codigo span::after{
+    content: ">";
+}
+.capital::first-letter{
+    font-size: 200%;
+    margin: 3px;
+}
+.seleccion::selection{
+    background-color: yellow;
+}
+#div07 ul ::marker{
+    color:green;
+    font-size: 150%;
+}
