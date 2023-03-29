@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.contenedor{
+    width: 80%;
+    margin: auto;
+}
+.txtSombra{
+    font-size: 300%;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px gray;
+}
+.txtSombraDoble{
+    font-size: 300%;
+    font-weight: 600;
+    text-shadow: 0 0 5px red, 3px 3px 4px orange;
+}
+.box{
+    display: inline-block;
+    width: 300px;
+    background-color: orange;
+    padding:20px;
+    margin: 30px;
+}
+.boxSombra1{
+    box-shadow: 7px 7px black;
+}
+.boxSombra2{
+    box-shadow: 4px 4px red, 8px 8px purple, 12px 12px blue;
+}
+.boxSombra3{
+    box-shadow: 7px 7px 4px darkorange inset;
+}
+.boxSombra4{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 150px;
+}
+.op{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color:white;
+    font-size: 200%;
+}
+.op1{
+    background-color: blue;
+}
+.op2{
+    background-color: orange;
+    transform: translate(-50px, 20px);
+    opacity: 0.5;
+}
+.redim{
+    background-color: orangered;
+    resize: horizontal;
+    overflow: auto;
+}

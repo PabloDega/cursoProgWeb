@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contenedor{
+    margin: auto;
+    width: 70%;
+}
+.lista1{
+    list-style-type: square;
+    list-style-position: outside;
+    background-color: blue;
+    color:white;
+    padding: 20px;
+    width: 500px;
+}
+.lista1 li{
+    background-color: lightblue;
+    padding: 7px;
+    margin-left: 30px;
+    color: darkblue;
+}
+.tabla1{
+    border-collapse: collapse;
+    width: 80%;
+}
+.tabla1 th, .tabla1 td{
+    padding: 8px;
+    border: 1px solid lightgray;
+}
+.tabla1 th{
+    background-color: orangered;
+    color: white;
+    text-align: left;
+}
+.tabla1 tr{
+    transition: 0.3s;
+}
+.tabla1 tr:nth-child(even){
+    background-color: #e9e9e9;
+}
+.tabla1 tr:hover{
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
