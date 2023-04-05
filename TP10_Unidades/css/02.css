@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    background-color: #222222   ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+}
+.contenedor{
+    background-color: greenyellow;
+    width: 400px;
+    display: inline-block;
+}
+h1, h2{
+    color: white;
+}
+.caja{
+    background-color: green;
+    border: 2px solid darkgreen;
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 15px;
+}
+.relativo{
+    position: relative;
+    background-color: orange;
+    top:50px;
+    left: 100px;
+}
+.relativo:hover{
+    top:0;
+    left: 0;
+}
+.subcaja{
+    background-color: yellow;
+    border: 2px solid darkgreen;
+    display: block;
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+}
+.absoluta{
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.fija{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.sticky{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}

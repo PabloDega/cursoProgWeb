@@ -1,0 +1,149 @@
+body{
+    margin: 0 20% 0 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.caja{
+    display: block;
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.trans1{
+    transition: 2s;
+    transition-delay: 1s;
+}
+.trans1:hover{
+    width: 500px;
+    background-color: red;
+}
+.trans2{
+    transition: 18s, width 2s, height 6s;
+}
+.trans2:hover{
+    width: 500px;
+    height: 500px;
+    background-color: green;
+}
+.trans3{
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+.trans3:hover{
+    width: 700px;
+    background-color: red;
+}
+.contenedor{
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-color: darksalmon;
+    font-size: 0;
+}
+.contenedor .efecto{
+    display: inline-block;
+    width: 5%;
+    height: 50px;
+    margin-top: 100px;
+    background-color: darkred;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+.contenedor .efecto:hover{
+    height: 120px;
+    margin-top: 30px;
+}
+/* UFO */
+.ufo{
+    margin-top: 20px;
+    display: block;
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+.ufo img{
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    transition: 1.5s;
+    transition-timing-function: ease-in-out;
+}
+.ufo:hover > img{
+    bottom:600px;
+}
+/* BANNER */
+.banner{
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    background-image:linear-gradient(darkcyan, lightgray);
+    overflow: hidden;
+    position: relative;
+}
+.banner h2{
+    color:white;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 3px darkcyan;
+    position: absolute;
+    top: 15px;
+    left:-250px;
+    transition: 1s;
+}
+.banner:hover h2{
+    top: 15px;
+    left: 30px;
+}
+.banner p{
+    color:white;
+    font-size: 2em;
+    margin: 0;
+    text-shadow: 2px 2px 3px darkcyan;
+    position:absolute;
+    top: 150px;
+    left: 350px;
+    display: inline-block;
+    width:200px;
+    transition: 1s;
+    transition-delay: 2s;
+}
+.banner:hover p{
+    left: 70px;
+}
+.banner a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: blue;
+    box-shadow: 2px 2px 3px darkcyan;
+    position: absolute;
+    top: 250px;
+    left: -310px;
+    transition: 1s;
+    transition-delay: 3s;
+}
+.banner:hover a{
+    left: 110px;
+}
+.banner img{
+    width: 140%;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 1s;
+}
+.banner:hover img{
+    opacity: 1;
+}

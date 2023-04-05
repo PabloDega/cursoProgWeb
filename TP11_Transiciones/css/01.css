@@ -1,0 +1,39 @@
+body{
+    margin: 0 15% 0 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.contenedor{
+    background-color: yellow;
+    overflow: auto;
+}
+.caja{
+    height: 200px;
+    width: 200px;
+    float: left;
+    border: 2px solid black;
+    background-color: greenyellow;
+    margin: 10px;
+}
+article{
+    border: 2px solid black;
+    width: 50%;
+    padding: 1em;
+    overflow: auto;
+}
+article img{
+    float: right;
+}
+.overflow{
+    width: 500px;
+    height: 200px;
+    border: 2px solid black;
+    overflow: hidden;
+    margin: 25px;
+}
+.over2{
+    overflow: scroll;
+}
+.over3{
+    overflow: visible;
+}
