@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 1100px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+    background-color: black;
+    color: lightgreen;
+    flex-wrap: wrap;
+}
+header img{
+    width: 150px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+    gap: 2em;
+    background-color: grey;
+    font-weight: 600;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    padding: 1em;
+    font-size: 1.5em;
+}
+#accion{
+    background-color: darkgrey;
+    color:white;
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+}
+#accion a{
+    display: inline-block;
+    background-color: green;
+    color: inherit;
+    padding: 0.5em;
+    border-radius: 15px;
+}
+#texto1, #texto2{
+    padding: 1em;
+    font-size: 1.2em;
+}
+#galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em;
+    justify-content: space-around;
+}
+#galeria div{
+    flex-grow: 1;
+    max-height: 150px;
+    overflow: hidden;
+}
+#galeria div img{
+    width: 100%;
+}
+#texto2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+    font-size: 0;
+    margin: 0 0 2rem 0;
+}
+#p1{
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    flex-grow: 1;
+    min-width: 360px;
+}
+#p2{
+    background-color: darkgreen;
+    padding: 2em;
+    color: white;
+    font-size: 1rem;
+    width: 37%;
+    flex-grow: 1;
+}
+footer{
+    background-color: green;
+    padding: 2em;
+}
