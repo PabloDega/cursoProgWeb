@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 1100px;
+}
+/* Diseño del Navbar */
+nav{
+    display: flex;
+    gap:1em;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    background-color: gray;
+    padding: 0.3em;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+    padding: 1em;
+    display: block;
+    background-color: coral;
+}
+#hamburguesa{
+    display: none;
+    width: 30px;
+}
+#hamburguesa div{
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 3px;
+    background-color: coral;
+}
+@media screen and (max-width: 600px) {
+    nav a{
+        width: 100%;
+        text-align: center  ;
+    }
+    nav{
+        background-color:transparent;
+    }
+}
+@media screen and (max-width: 400px){
+    nav{
+        display: none;
+    }
+    #hamburguesa{
+        display: block;
+    }
+}
+/* Diseño de la grid */
+#grid1{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "header header"
+    "foto foto"
+    "main article"
+    "footer footer";
+}
+#grid1>*{
+    padding: 1em;
+}
+#grid1 header{
+    grid-area: header;
+    background-color: red;
+}
+#grid1 #foto{
+    grid-area: foto;
+    width: 100%;
+    padding: 0;
+}
+#grid1 main{
+    grid-area: main;
+    background-color: green;
+}
+#grid1 article{
+    grid-area: article;
+    background-color: orange;
+}
+#grid1 footer{
+    grid-area: footer;
+    background-color: blue;
+}
+@media screen and (max-width: 768px){
+    #grid1{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "article"
+        "footer ";
+    }
+    #grid1 #foto{
+        display: none;
+    }
+}
+@media print{
+    #grid1 #foto{
+        display: none;
+    }
+}

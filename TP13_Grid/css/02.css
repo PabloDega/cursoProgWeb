@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2fr minmax(250px, 1fr);
+    min-height: 100vh;
+    grid-template-areas: 
+        "header header"
+        "main article"
+        "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background-color: red;
+    grid-area: header;
+}
+main{
+    background-color: green;
+    grid-area: main;
+}
+article{
+    background-color: orange;
+    grid-area: article;
+}
+footer{
+    background-color: blue;
+    grid-area: footer;
+}

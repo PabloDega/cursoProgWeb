@@ -126,7 +126,7 @@ p.clase02{
 .seleccion::selection{
     background-color: yellow;
 }
-#div07 ul ::marker{
+#div07 ul li::marker{
     color:green;
     font-size: 150%;
 }
