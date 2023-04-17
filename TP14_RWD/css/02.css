@@ -42,7 +42,7 @@ header h1{
     font-size: 3em;
     letter-spacing: 5px;
 }
-a{
+a, #botonForm{
     display: inline-block;
     padding: 0.7em;
     background-color: var(--boton);
@@ -53,7 +53,7 @@ a{
     letter-spacing: 1px;
     transition: 0.3s;
 }
-a:hover{
+a:hover, #botonForm:hover{
     background-color: var(--primario);
 }
 main{
@@ -207,6 +207,24 @@ main #txt2 a{
     70%{transform: translateX(-200%);}
     90%{transform: translateX(-200%);}
     100%{transform: translateX(-300%);}
+}
+#formulario1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+#formulario1 input, #formulario1 textarea{
+    margin-top: 1em;
+    padding: 0.5em;
+}
+#botonForm{
+    border: 0;
+    cursor: pointer;
+    width: 200px;
+    margin: auto;
 }
 #redes{
     display: flex;
