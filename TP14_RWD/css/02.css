@@ -1,296 +1,85 @@
+/* Estilo "Día" */
 :root{
-    --fondo: #222222;
-    --texto: white;
-    --boton: rgb(238, 213, 207);
-    --primario: rgb(251, 87, 87);
+    --fondo: white;
+    --texto: rgb(23, 23, 23);
+    --primario: rgb(13, 22, 118);
+    --secundario: rgb(78, 176, 159);
 }
+/* Estilo "Noche" */
+/* :root{
+    --fondo: rgb(23, 23, 23);
+    --texto: white;
+    --primario: rgb(78, 176, 159);
+    --secundario: rgb(13, 22, 118);
+} */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    line-height: 1.5em;
 }
-*::selection{
-    background:var(--primario);
+.resetA, nav>a{
+    text-decoration: none;
+    color: inherit;
 }
 body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--fondo);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--texto);
+    color: var(--texto)
 }
-.contenedor{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2em;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-}
-header{
-    display: flex;
-    align-items: center;
-    padding: 1em 0;
+.caja1{
+    padding: 1em;
     margin-bottom: 1em;
 }
-header h1{
-    flex-grow: 1;
-}
-header nav{
-    display: flex;
-    gap: 1.6em;
-}
-header h1{
-    font-size: 3em;
-    letter-spacing: 5px;
-}
-a, #botonForm{
-    display: inline-block;
-    padding: 0.7em;
-    background-color: var(--boton);
-    color: var(--fondo);
-    border-radius: 0.3em;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-a:hover, #botonForm:hover{
-    background-color: var(--primario);
-}
-main{
-    display: flex;
-    gap: 2em;
-    margin-bottom: 2em;
-}
-main>*{
-    width: 50%;
-}
-main #txt1{
-    font-size: 1.5em;
-}
-main #txt2{
-    font-size: 1.1em;
-    text-align: center;
-    padding: 3em;;
-    border: 4px solid var(--boton);
-}
-main #txt2 a{
-    display: block;
-    text-align: center;
-    margin: 15px auto 0 auto;
-    width: fit-content;
-    transform: scale(115%);
-}
-#imgMain{
-    width: 100%;
-    margin-bottom: 2em;
-}
-#tarjetas{
-    display: flex;
-    gap: 3em;
-    margin-bottom: 2em;
-}
-.tarjeta{
-    border: 2px solid var(--boton);
-    padding: 1em;
-    flex-grow: 1;
-    text-align: center;
-    transition: 0.5s;
-}
-.tarjeta a{
-    display: block;
-    width: fit-content;
-    margin: 1em auto 0 auto;
-}
-.tarjeta:hover{
-    transform: scale(110%);
-}
-#animacion1{
-    width: 100%;
-    height: 20px;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 2em;
-}
-.barra{
-    width: 60%;
-    height: 3px;
-    background-color: var(--boton);
-    position: absolute;
-    animation-name: barras;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-#barra1{
-    top: 0;
-    left: -60%;
-    animation-duration: 3s;
-}
-#barra2{
-    top:15px;
-    left: -60%;
-    animation-duration: 5s;
-}
-#barra3{
-    background-color: var(--primario);
-    top: 5px;
-    left: -60%;
-    animation-duration: 4s;
-    animation-delay: 1s;
-}
-#barra4{
-    top:10px;
-    left: -60%;
-    animation-duration: 6s;
-    animation-delay: 2s;
-}
-@keyframes barras{
-    from{transform: translateX(270%);}
-    to{}
-}
-#section1{
-    display: flex;
-    gap: 3em;
-    margin-bottom: 2em;
-}
-#galeria{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2em;
-    margin-bottom: 4em;
-}
-#galeria a{
-    filter: grayscale(90%);
-    width: 100%;
-    transition: 1s;
-    padding: 0;
-    border-radius: 0;
-    background-color: transparent;
-}
-#galeria img{
-    width: 100%;
-}
-#galeria a:hover{
-    filter: none;
-}
-#testimonios{
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    margin-bottom: 2em;
-}
-#testimonios div{
-    min-width: 100%;
-    text-align: center;
-}
-#testimonios div img{
-    height: 150px;
-    border-radius: 50%;
-    filter: grayscale(70%);
-    margin-bottom: 2em;
-}
-#testimonios div p{
-    font-size: 1.4em;
+#contenedor{
+    max-width: 1100px;
     width: 70%;
     margin: 0 auto;
 }
-#test1, #test2, #test3{
-    animation-name: testimonios;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+header{
+    color:var(--primario)
 }
-@keyframes testimonios{
-    20%{transform: none}
-    30%{transform: translateX(-100%);}
-    60%{transform: translateX(-100%);}
-    70%{transform: translateX(-200%);}
-    90%{transform: translateX(-200%);}
-    100%{transform: translateX(-300%);}
+header h1{
+    font-size: 3em;
 }
-#formulario1{
+nav{
+    display: flex;
+}
+nav a{
+    padding: 1em;
+    flex-grow: 1;
+    background-color: var(--primario);
+    color:var(--fondo);
     text-align: center;
+    font-size: 1.2em;
+}
+nav a:hover{
+    background-color: var(--secundario);
+}
+main{
     display: flex;
-    flex-direction: column;
-    width: 400px;
-    margin: 0 auto;
-    margin-bottom: 2em;
 }
-#formulario1 input, #formulario1 textarea{
-    margin-top: 1em;
-    padding: 0.5em;
+#mainDiv1{
+    font-size: 2.5em;
 }
-#botonForm{
-    border: 0;
-    cursor: pointer;
-    width: 200px;
-    margin: auto;
+section{
+    line-height: 1.3em;
+    font-size: 1.2em;
 }
-#redes{
+#accion{
+    background-color: var(--secundario);
     display: flex;
-    gap: 2em;
-    justify-content: center;
-    margin-bottom: 2em;
+    font-size: 1.5em;
+    gap:2em;
+    align-items: center;
 }
-#redes svg{
-    width: 40px;
-    fill: var(--boton);
+#accion a{
+    background-color: var(--fondo);
+    padding: 1em;
+}
+#accion a:hover{
+    background-color: var(--primario);
+    color:var(--fondo);
 }
 footer{
-    width: 100%;
     text-align: center;
-    padding: 2em;
-}
-
-@media screen and (max-width: 1024px){
-    header{
-        flex-direction: column;
-        gap: 2em;
-    }
-    main #txt1{
-        width: 60%;
-    }
-    main #txt2{
-        width: 40%;
-    }
-    #tarjetas{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .tarjeta{
-        max-width: 25%;
-    }
-    #section1{
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 768px){
-    main{
-        flex-direction: column;
-    }
-    main #txt1, main #txt2{
-        width: 100%;
-    }
-    #galeria{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .tarjeta{
-        max-width: 40%;
-    }
-}
-@media screen and (max-width: 480px){
-    nav{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    #imgMain{
-        display: none;
-    }
-    .tarjeta{
-        max-width: 80%;
-    }
-    #galeria{
-        grid-template-columns: 1fr;
-    }
 }
