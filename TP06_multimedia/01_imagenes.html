@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes en html</title>
+    <link rel="stylesheet" href="css/01_estilo.css">
+    <link rel="shortcut icon" href="im/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="contenedor1">
+        <h1>Imagenes en HTML</h1>
+        <img src="im/loading01.gif" alt="Loop de loadign">
+        <img src="im/gif01.gif" alt="Alien">
+    </div>
+    <h2>Imagen SVG</h2>
+    <div id="contenedor2">
+        <img src="im/blackcat.svg" alt="cualquier cosa">
+    </div>
+    <h2>Edición de Imágenes</h2>
+    <img src="im/foto01.jpg" alt="foto1" class="img" id="edicion1">
+    <img src="im/foto01.jpg" alt="foto2" class="img" id="edicion2">
+    <img src="im/foto01.jpg" alt="foto3" class="img" id="edicion3">
+    <img src="im/foto01.jpg" alt="foto4" class="img" id="edicion4">
+    <img src="im/foto01.jpg" alt="foto5" class="img" id="edicion5">
+    <hr>
+    <h2>Imagen como boton</h2>
+    <a href="#contenedor2">
+        <img src="im/foto01.jpg" alt="">
+    </a>
+    <hr>
+    <h2>Etiqueta Picture</h2>
+    <picture>
+        <source media="(min-width: 800px)" srcset="im/perro.png">
+        <source media="(min-width: 600px)" srcset="im/gato.png">
+        <img src="im/hamster.png" alt="">
+    </picture>
+</body>
+</html>

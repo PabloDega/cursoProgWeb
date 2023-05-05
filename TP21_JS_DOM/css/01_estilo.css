@@ -1,0 +1,15 @@
+p{
+    color:white;
+}
+.rojo{
+    background-color: darkred;
+}
+.azul{
+    background-color: darkblue;
+}
+.naranja{
+    background-color: darkorange;
+}
+section > *{
+    margin-bottom: 15px;
+}

@@ -1,0 +1,57 @@
+#mouseEvents, #tocame, #dibujame{
+    width: 500px;
+    padding: 100px 0;
+    text-align: center;
+    font-size: 3em;
+    background-color: orange;
+    position: relative;
+}
+#mouseEvents > span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px;
+    font-size: 1rem;
+}
+#keyEvents input{
+    display: block;
+    margin-bottom: 20px;
+}
+#uiEvents{
+    width: 300px;
+    height: 200px;
+    overflow-Y: scroll;
+    border: 3px solid blue;
+    box-sizing: content-box;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    display: inline-block;
+}
+#uiEvents::-webkit-scrollbar{
+    display: none;
+}
+#barraLectura, #barraReferencia{
+    display: inline-block;
+    width: 10px;
+    height: 200px;
+    background-color: gray;
+}
+#barraLectura{
+    height: 0px;
+    background-color: blue;
+}
+#circuloScroll{
+    fill: none;
+    stroke:blue;
+    stroke-width: 15;
+    stroke-dasharray: 1 252;
+}
+#tocame{
+    background-color: lightcoral;
+}
+
+#dibujame{
+    background-color: lightgreen;
+    position: relative;
+}

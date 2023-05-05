@@ -1,0 +1,46 @@
+#contenedor1{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#contenedor1 img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+#contenedor1 img:nth-child(3){
+    width: 500px;
+}
+#contenedor1 img[alt="Alien"]{
+    width: 500px;
+}
+#contenedor2{
+    background-color: darkorange;
+    padding: 20px;
+}
+#contenedor2 img{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+.img{
+    width: 400px;
+}
+#edicion1{
+    filter: grayscale(95%);
+}
+#edicion1:hover{
+    filter: none;
+}
+#edicion2{
+    filter:blur(4px);
+}
+#edicion3{
+    filter: invert();
+}
+#edicion4{
+    filter: sepia(90%);
+}
+#edicion5{
+    filter: opacity(0.2);
+}
