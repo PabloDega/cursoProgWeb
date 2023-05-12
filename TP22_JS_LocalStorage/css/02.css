@@ -1,0 +1,79 @@
+:root{
+    --primario: rgb(93, 93, 235);
+    --secundario: rgb(24, 173, 56);
+    --terciario: rgb(207, 81, 18);
+}
+
+body{
+    margin: 0;
+    background-color: var(--primario);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input, select{
+    padding: 0.3em;
+}
+h1, h2{
+    margin-top: 0;
+}
+#contenedor{
+    width:fit-content;
+    background-color: white;
+    padding: 2em;
+    margin: 0 auto;
+}
+#tareas{
+    margin-top: 2em;
+    border: 2px solid  var(--primario);
+    border-collapse: collapse;
+}
+#tareas th{
+    background-color: var(--primario);
+}
+#tareas th, #tareas td{
+    border: 1px solid var(--primario);
+    padding: 0.5em;
+}
+#tareas span{
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 0.5em;
+    background-color: var(--primario);
+    color: white;
+    cursor: pointer;
+}
+#tareas .tareaCompleta{
+    background-color: var(--secundario);
+}
+#tareas .tareaPendiente{
+    background-color: var(--terciario);
+}
+#agregarTarea{
+    background-color: var(--primario);
+    display: inline-block;
+    padding: 2em;
+    color: white;
+}
+#modificarTarea{
+    position: absolute;
+    background-color:  var(--primario);
+    padding: 2em;
+    width: 30%;
+    top: 100px;
+    left: 0;
+    margin-left: 35%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+#modificarTarea input, #modificarTarea select{
+    display: block;
+    margin-bottom: 1em;
+}
+#modificar{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}

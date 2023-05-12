@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tareas</title>
+    <link rel="stylesheet" href="css/02.css">
+</head>
+<body>
+    <div id="contenedor">
+
+    <h1>Lista de Tareas</h1>
+
+    <form action="" method="get" id="agregarTarea">
+        <h2>Agregar tarea</h2>
+        <input type="text" name="tarea" id="tarea">
+        <button type="submit" id="agregarTareaOk">Agregar</button>
+    </form>
+
+    <table id="tareas">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Tarea</th>
+                <th>Estado</th>
+                <th>Modificaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+           <!--  <tr>
+                <td>01</td>
+                <td>Ejemplo1</td>
+                <td>Pendiente</td>
+                <td>
+                    <span class="tareaCompleta">Completa</span>
+                    <span class="tareaPendiente">Pendiente</span>
+                    <span class="   ">Editar</span>
+                    <span class="borrarTarea">Borrar</span>
+                </td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <div id="modificar">
+        <form action="" method="get" id="modificarTarea">
+            <h2>Modificar tarea</h2>
+            <label for="id">ID</label>
+            <input type="text" name="modId" id="modId" disabled>
+            <label for="tarea">Tarea</label>
+            <input type="text" name="modTarea" id="modTarea">
+            <label for="estado">Estado</label>
+            <select name="modEstado" id="modEstado">
+                <option value="" selected disabled>Seleccione</option>
+                <option value="Pendiente">Pendiente</option>
+                <option value="Completa">Completa</option>
+            </select>
+            <button type="submit" id="modificarTareaOk">Modificar</button>
+            <button id="modificarTareaCancelar">Cancelar</button>
+        </form>
+    </div>
+    </div>
+    <script src="script/02.script.js"></script>
+</body>
+</html>
