@@ -119,3 +119,8 @@ dibujame.addEventListener("touchend", activarScroll);
 function activarScroll(){
     window.onscroll = function() {};
 }
+
+/* document.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(e.target);
+}) */
