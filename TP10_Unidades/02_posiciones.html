@@ -8,29 +8,24 @@
     <link rel="stylesheet" href="css/02.css">
 </head>
 <body>
-  
     <h1>Posiciones</h1>
     <hr>
     <h2>Relativa</h2>
-    <div class="contenedor">
-        <div class="caja"></div>
-        <div class="caja relativo"></div>
-        <div class="caja"></div>
+    <div class="box">
+        <div class="caja">1</div>
+        <div class="caja" id="relativo">2</div>
+        <div class="caja">3</div>
     </div>
     <hr>
-    <div class="caja sticky"><h2>Sticky</h2></div>
+    <div class="caja" id="sticky"><h2>Sticky</h2></div>
     <hr>
     <h2>Absoluta</h2>
-    <div class="contenedor" style="position: relative;">
-        <div class="caja"></div>
-        <div class="caja" style="position: relative;">
-            <div class="subcaja"></div>
-            <div class="subcaja absoluta"></div>
-            <div class="subcaja"></div>
-        </div>
-        <div class="caja"></div>
+    <div class="box" id="contenedorRelativo">
+        <div class="caja">1</div>
+        <div class="caja" id="absoluta">2</div>
+        <div class="caja">3</div>
     </div>
-    <div class="caja fija"><h2>Fija</h2></div>
-
+    <div class="caja" id="fija"><h2>Fija</h2></div>
+    <div id="extraScroll"></div>
 </body>
 </html>

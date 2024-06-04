@@ -49,9 +49,6 @@ nav a:hover{
     padding: 5px;
     box-sizing: border-box;
     position: relative;
-}
-#galeria div img{
-    width: 100%;
     cursor: pointer;
 }
 #galeria div img:hover{

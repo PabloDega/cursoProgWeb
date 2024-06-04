@@ -10,27 +10,27 @@ body{
     padding: 20px;
     box-sizing: border-box;
 }
-.trans1{
+#transicion1{
     transition: 2s;
     transition-delay: 1s;
 }
-.trans1:hover{
+#transicion1:hover{
     width: 500px;
     background-color: red;
 }
-.trans2{
+#transicion2{
     transition: 18s, width 2s, height 6s;
 }
-.trans2:hover{
+#transicion2:hover{
     width: 500px;
     height: 500px;
     background-color: green;
 }
-.trans3{
+#transicion3{
     transition: 1s;
     transition-timing-function: ease-in-out;
 }
-.trans3:hover{
+#transicion3:hover{
     width: 700px;
     background-color: red;
 }
@@ -72,7 +72,7 @@ body{
     transition: 1.5s;
     transition-timing-function: ease-in-out;
 }
-.ufo:hover > img{
+.ufo:hover img{
     bottom:600px;
 }
 /* BANNER */

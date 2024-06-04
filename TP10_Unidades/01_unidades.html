@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-AR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,42 @@
     <title>Unidades de Medida</title>
     <link rel="stylesheet" href="css/01.css">
 </head>
+
 <body>
-    <h1>Unidades de Medida</h1>
-    <h2>Medidas Absolutas</h2>
-    <h3>Texto</h3>
-    <p>Texto en tamaño base (16px)</p>
-    <p class="txt1">Texto dimensionado en pixeles</p>
-    <h3>Cajas</h3>
-    <div class="caja caja1">Caja dimensionada en pixeles</div><br>
-    <div class="caja caja2">
-        Caja 2
-        <div class="caja caja3">
-            Caja 3
+    <div id="contenedor">
+        <h1>Unidades de Medida</h1>
+        <h2>Medidas Absolutas</h2>
+        <h3>Texto</h3>
+        <p>Texto sin declarar font-size (16px)</p>
+        <p class="txt1">Texto dimensionado en pixeles</p>
+        <h3>Cajas</h3>
+        <div class="caja" id="caja1">Caja dimensionada en pixeles</div><br>
+        <hr>
+        <h2>Medidas relativas</h2>
+        <div id="medidasRelativas">
+            <h3>Texto</h3>
+            <p class="txt2">Texto en EM</p>
+            <p class="txt2">Lorem ipsum dolor sit amet, <span>Lorem ipsum dolor sit.</span> consectetur adipisicing
+                elit.</p>
+            <p class="txt3">Texto en REM</p>
+            <p class="txt3">Lorem ipsum dolor sit amet, <span>Lorem ipsum dolor sit.</span> consectetur adipisicing
+                elit.</p>
+            <p class="txt4">Texto en %</p>
+            <p class="txt4">Lorem ipsum dolor sit amet, <span>Lorem ipsum dolor sit.</span> consectetur adipisicing
+                elit.</p>
+            <p class="txt5">Texto en wv</p>
+            <p class="txt5">Lorem ipsum dolor sit amet, <span>Lorem ipsum dolor sit.</span> consectetur adipisicing
+                elit.</p>
+            <h3>Cajas</h3>
+            <div class="caja" id="caja4">Caja en EM</div><br>
+            <div class="caja" id="caja5">Caja en %</div><br>
+            <div class="caja" id="caja6">Caja en WV</div>
+            <h2>Tamaño Maximo y Minimo</h2>
+            <div class="caja" id="caja7">Caja con tope max</div><br>
+            <div class="caja" id="caja8">Caja con tope min</div>
         </div>
     </div>
-    <hr>
-    <h2>Medidas relativas</h2>
-    <h3>Texto</h3>
-    <p class="txt2">Texto en EM</p>
-    <p class="txt2">Lorem ipsum dolor sit amet, <span>Lorem ipsum dolor sit.</span> consectetur adipisicing elit.</p>
-    <p class="txt3">Texto en REM</p>
-    <p class="txt3">Lorem ipsum dolor sit amet, <span>Lorem ipsum dolor sit.</span> consectetur adipisicing elit.</p>
-    <p class="txt4">Texto en %</p>
-    <p class="txt4">Lorem ipsum dolor sit amet, <span>Lorem ipsum dolor sit.</span> consectetur adipisicing elit.</p>
-    <p class="txt5">Texto en wv</p>
-    <p class="txt5">Lorem ipsum dolor sit amet, <span>Lorem ipsum dolor sit.</span> consectetur adipisicing elit.</p>
-    <h3>Cajas</h3>
-    <div class="caja caja4">Caja en EM</div><br>
-    <div class="caja caja5">Caja en %</div><br>
-    <div class="caja caja6">Caja en WV</div>
-    <h2>Tamaño Maximo y Minimo</h2>
-    <div class="caja caja7">Caja con tope max</div><br>
-    <div class="caja caja8">Caja con tope min</div>
+
 </body>
+
 </html>

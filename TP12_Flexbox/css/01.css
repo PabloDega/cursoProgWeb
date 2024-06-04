@@ -17,46 +17,53 @@ body{
     /* column-gap: 1em;
     row-gap: 3em; */
 }
+.box{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+    background-color: red;
+}
 .item{
     border: 2px solid darkred;
     padding: 0.5em;
     /* margin: 0.5em; */
 }
-.item1{
+#item1{
     background-color: orange;
     width: 100px;
 }
-.item2{
+#item2{
     background-color: yellow;
     flex-grow: 1;
 }
-.item3{
+#item3{
     background-color: yellowgreen;
     width: 200px;
     order: -1;
 }
-.item4{
+#item4{
     background-color: green;
     width: 400px;
     height: 150px;
 }
-.item5{
+#item5{
     background-color: blue;
     flex-grow: 1;
 }
-.item6{
+#item6{
     background-color: purple;
     flex-grow: 2;
 }
-.item7{
+#item7{
     background-color: violet;
     flex-grow: 1;
 }
-.item8{
+#item8{
     background-color: pink;
     flex-grow: 2;
 }
-.item9{
+#item9{
     background-color: magenta;
     flex-grow: 1;
 }
@@ -83,7 +90,7 @@ body{
     flex-wrap: wrap;
     gap:2em;
     height: 400px;
-    align-items:stretch;
+    align-items:flex-start;
     margin: 1em;
     justify-content: space-evenly;
 }
@@ -91,6 +98,9 @@ body{
     width: 150px;
     background-color: magenta;
     padding: 1em;
+}
+#aIItem3{
+    align-self: center;
 }
 .aCCont{
     display: flex;

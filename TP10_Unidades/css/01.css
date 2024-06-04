@@ -2,6 +2,11 @@ body{
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+#contenedor{
+    width: 80%;
+    margin: 0 auto;
+    /* font-size: 1.5em; */
+}
 h1, h2{
     color:red;
 }
@@ -18,21 +23,14 @@ h3{
     margin: 20px;
     padding: 10px;
 }
-.caja1{
-    width: 750px;
+#caja1{
+    width: 500px;
     height: 250px;
     background-color: green;
 }
-.caja2{
-    width: 600px;
-    height: 300px;
-    background-color: orange;
-}
-.caja3{
-    width: 300px;
-    height: 150px;
-    background-color: red;
-}
+/* #medidasRelativas{
+    font-size: 1.5em;
+} */
 .txt2{
     font-size: 1.5em;
     color:blue;
@@ -64,28 +62,28 @@ h3{
 .txt5 span{
     font-size: 1vw;
 }
-.caja4{
+#caja4{
     background-color: purple;
     width: 18em;
     height: 100px;
 }
-.caja5{
+#caja5{
     background-color: aquamarine;
     width: 30%;
     height: 100px;
 }
-.caja6{
+#caja6{
     background-color: yellow;
     width: 30vw;
     height: 100px;
 }
-.caja7{
+#caja7{
     background-color: magenta;
     height: 100px;
     width: 50%;
     max-width: 500px;
 }
-.caja8{
+#caja8{
     background-color: cyan;
     height: 100px;
     width: 50%;

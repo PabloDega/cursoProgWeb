@@ -31,9 +31,9 @@ article img{
     overflow: hidden;
     margin: 25px;
 }
-.over2{
+#over2{
     overflow: scroll;
 }
-.over3{
+#over3{
     overflow: visible;
 }

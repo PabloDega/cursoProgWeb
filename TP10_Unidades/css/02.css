@@ -4,13 +4,13 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 30px;
 }
-.contenedor{
-    background-color: greenyellow;
-    width: 400px;
-    display: inline-block;
-}
 h1, h2{
     color: white;
+}
+.box{
+    background-color: greenyellow;
+    width: 300px;
+    display: inline-block;
 }
 .caja{
     background-color: green;
@@ -19,14 +19,16 @@ h1, h2{
     width: 200px;
     display: block;
     margin: 15px;
+    font-size: 2em;
+    text-align: center;
 }
-.relativo{
+#relativo{
     position: relative;
     background-color: orange;
     top:50px;
     left: 100px;
 }
-.relativo:hover{
+#relativo:hover{
     top:0;
     left: 0;
 }
@@ -38,19 +40,29 @@ h1, h2{
     width: 70px;
     margin: 5px;
 }
-.absoluta{
+#contenedorRelativo{
+    position: relative;
+}
+#absoluta{
     background-color: orange;
     position: absolute;
     top: 0;
     right: 0;
 }
-.fija{
+#fija{
     position:fixed;
     bottom: 20px;
     right: 20px;
 }
-.sticky{
+#sticky{
     position: sticky;
     top:0;
     z-index: 1;
+    margin: 0 auto;
+}
+#extraScroll{
+    display: block;
+    width: 100px;
+    height: 1000px;
+    background-color: black;
 }
