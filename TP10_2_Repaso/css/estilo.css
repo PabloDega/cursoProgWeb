@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    background-color: rgb(58, 160, 215);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contenedor{
+    background-color: white;
+    padding: 0 2em;
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+header{
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+header img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    min-width: 200px;
+}
+nav{
+    background-color: rgb(20, 87, 123);
+    width: 100%;
+    padding: 0 2em;
+    position: relative;
+    left: -2em;
+    margin: 1em 0;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    display: inline-block;
+}
+nav a:hover{
+    background-color: rgb(8, 45, 64);
+}
+main{
+    font-size: 0;
+}
+main span{
+    font-size: 1rem;
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+main img{
+    width: 38%;
+    margin-left: 2%;
+}
+#accion{
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2em;
+}
+#accion a{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rgb(20, 87, 123);
+    color: white;
+    text-decoration: none;
+    padding: 0.7em;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+}
+footer{
+    background-color: darkgray;
+    padding: 0.5em 2em;
+    position: relative;
+    left: -2em;
+    width: 100%;
+    margin-top: 2em;
+}
+footer img{
+    width: 50px;
+    vertical-align: middle;
+}
+h1{
+    border-bottom: 3px solid rgb(20, 87, 123);
+    margin: 0 0 1em 0;
+}
+#sedeTxt{
+    margin-bottom: 2em;   
+}
+#formInscripcion{
+    width: 40%;
+    box-shadow: 3px 3px 12px rgb(0, 0, 0, 0.7);
+    padding: 1em;
+}
+#formInscripcion h1{
+    margin-bottom: 0.5em;
+}
+#formInscripcion span{
+    display: block;
+    margin: 1em 0;
+}
+#formInscripcion span label{
+    display: inline-block;
+    width: 100px;
+    border-bottom: 1px solid rgb(20, 87, 123);
+}
+.formBtn{
+    background-color: rgb(58, 160, 215);
+    border: 0;
+    padding: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}

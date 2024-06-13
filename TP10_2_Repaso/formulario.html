@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion Web - Repaso</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div id="contenedor">
+        <header><img src="im/CFL 2022 V2.png" alt="">Curso de Programación Web</header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sede.html">La sede</a>
+            <a href="#">Formulario</a>
+        </nav>
+        <h1>Formulario</h1>
+        <form action="" id="formInscripcion">
+            <h1>Inscripcion 2025</h1>
+            <span>Dejanos tus datos para el próximo ciclo lectivo</span>
+            <hr>
+            <span>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </span>
+            <span>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+            </span>
+            <span>
+                <label for="contacto">Contacto</label>
+                <input type="text" name="contacto" id="contacto">
+            </span>
+            <span>
+                <label for="curso">Curso</label>
+                <select name="curso" id="curso">
+                    <option value="" selected disabled>Seleccione una opcion</option>
+                    <option value="prog">Programación Web</option>
+                    <option value="subli">Sublimación</option>
+                </select>
+            </span>
+            <span>
+                <input type="submit" value="Enviar" class="formBtn">
+                <input type="reset" value="Borrar" class="formBtn">
+            </span>
+        </form>
+        <footer>
+            Curso de programación web 2024 - San Martín <img src="im/CFL 2022 V3.png" alt="">
+        </footer>
+    </div>
+</body>
+</html>

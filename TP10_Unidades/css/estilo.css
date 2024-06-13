@@ -1,95 +1,80 @@
 body{
     margin: 0;
-    background-color: #3d3d3d;
+    background-color: #232323;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.contenedor{
-    width: 70vw;
-    margin: auto;
+#contenedor{
     background-color: white;
-    box-sizing: border-box;
+    width: 70vw;
+    margin: 0 auto;
+    min-height: 100vh;
 }
 header{
-    padding: 2em;
-}
-header h1{
-    margin: 0;
+    font-size: 2em;
+    padding: 2rem;
+    font-weight: 600;
 }
 nav{
-    background-color: gray;
-    width: 100%;
-    position: sticky;
-    top:0;
-    z-index: 2;
+    background-color: #424242;
 }
 nav a{
-    display: inline-block;
     padding: 1em;
     color: white;
     text-decoration: none;
+    display: inline-block;
     transition: 0.3s;
 }
-nav a:first-child{
-    padding-left: 2em;
-}
 nav a:hover{
-    background-color: rgb(84, 84, 84);
+    background-color: #232323;
 }
-.texto{
-    padding: 2em;
+main, section, footer{
+    padding: 2rem;
+}
+footer{
+    background-color: #424242;
+    color: white;
+    font-weight: 600;
+}
+#subir{
+    display: block;
+    background-color: white;
+    padding: 1em;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    opacity: 0.4;
+    transition: 1s;
+    text-decoration: none;
+    color: black;
+}
+#subir:hover{
+    opacity: 1;
 }
 #galeria{
-    padding: 0 32px;
-    line-height: 0;
+    padding: 2rem;
     font-size: 0;
 }
 #galeria div{
     display: inline-block;
     width: 20%;
-    padding: 5px;
+    padding: 0.5rem;
     box-sizing: border-box;
     position: relative;
-    cursor: pointer;
+}
+#galeria div img{
+    width: 100%;
+    border: 6px solid white;
+    border-bottom: 12px solid white;
+    transition: 0.3s;
 }
 #galeria div img:hover{
-    transform: translate(-15%, 15%);
-    width: 130%;
-    z-index: 1;
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     left: 0;
-    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
-    border: 10px solid white;
-    border-bottom: 30px solid white;
-}
-footer{
-    display: inline-block;
-    padding: 2em;
-    background-color: gray;
-    color: white;
-    font-size: 0.8em;
-    width:100%;
-    box-sizing: border-box;
-    margin-top: 2em;
-}
-.top{
-    display: inline-block;
-    background-color: gray;
-    text-align: center;
-    box-shadow: 2px 2px 5px #2c2c2c;
-    padding: 20px;
-    position: fixed;
-    right: 5%;
-    bottom: 25px;
-}
-#subir{
-    color:white;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    opacity: 0.6;
-    transition: 0.5s;
-}
-#subir:hover{
-    opacity: 1;
+    transform: scale(125%);
+    z-index: 2;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
 }
